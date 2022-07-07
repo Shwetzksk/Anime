@@ -33,27 +33,24 @@ export default function Home() {
 
         {/*----- facebook --------*/}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://anime-kj04hdzzu-shwetzksk.vercel.app"
-        />
-        <link
-          rel="canonical"
-          href="https://anime-kj04hdzzu-shwetzksk.vercel.app"
-        ></link>
+        <meta property="og:url" content="https://anime-shwetzksk.vercel.app" />
+        <link rel="canonical" href="https://anime-shwetzksk.vercel.app"></link>
         <meta property="og:site_name" content="Anime"></meta>
         <meta property="og:title" content="Anime" />
         <meta
           property="og:description"
           content="Search or discover new anime content. This project is built using Jikan API. Developed by Shweta"
         />
-        <meta property="og:image" content="images/anime.jpg" />
+        <meta
+          property="og:image"
+          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8o879xl4CXk3CvZccyFew50pvVsWyrxJ2Q&usqp=CAU"
+        />
 
         {/*-------- twitter -----------*/}
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://anime-kj04hdzzu-shwetzksk.vercel.app"
+          content="https://anime-shwetzksk.vercel.app"
         />
         <meta name="twitter:site" content="@shwetzksk"></meta>
         <meta property="twitter:title" content="Anime" />
@@ -61,7 +58,10 @@ export default function Home() {
           property="twitter:description"
           content="Search or discover new anime content. This project is built using Jikan API. Developed by Shweta"
         />
-        <meta property="twitter:image" content="images/anime.jpg" />
+        <meta
+          property="twitter:image"
+          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8o879xl4CXk3CvZccyFew50pvVsWyrxJ2Q&usqp=CAU"
+        />
       </Head>
 
       <main className="flex flex-wrap">
