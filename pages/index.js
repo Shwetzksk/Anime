@@ -13,7 +13,11 @@ export default function Home() {
   console.log(res);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="w-screen h-screen grid place-items-center">
+        <span className="loader"></span>
+      </div>
+    );
   }
 
   return (
