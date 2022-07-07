@@ -164,9 +164,11 @@ function AnimeDetail(props) {
 export async function getStaticPaths() {
   const { data } = await axios.get(anime_list(1)).then((res) => res);
 
-  const paths = data.data.map((anime) => ({
-    params: { id: anime.mal_id.toString() },
-  }));
+  const paths = data.data
+    .filter((anime, i) => i < 5)
+    .map((anime) => ({
+      params: { id: anime.mal_id.toString() },
+    }));
 
   return { paths, fallback: false };
 }
