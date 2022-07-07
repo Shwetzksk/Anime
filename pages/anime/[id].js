@@ -22,6 +22,7 @@ function AnimeDetail(props) {
       episodes,
       background,
       images: {
+        jpg: { large_image_url: large_img },
         webp: { large_image_url: image_url },
       },
       score,
@@ -40,6 +41,7 @@ function AnimeDetail(props) {
           <title>{title}</title>
           <meta name="title" content={title} />
           <meta name="description" content={synopsis} />
+          <meta name="robots" content="follow, index" />
 
           {/*----- facebook --------*/}
           <meta property="og:type" content="website" />
@@ -47,9 +49,14 @@ function AnimeDetail(props) {
             property="og:url"
             content="https://anime-kj04hdzzu-shwetzksk.vercel.app"
           />
+          <link
+            rel="canonical"
+            href="https://anime-kj04hdzzu-shwetzksk.vercel.app"
+          ></link>
+          <meta property="og:site_name" content="Anime"></meta>
           <meta property="og:title" content={title} />
           <meta property="og:description" content={synopsis} />
-          <meta property="og:image" content={image_url} />
+          <meta property="og:image" content={large_img} />
 
           {/*-------- twitter -----------*/}
           <meta property="twitter:card" content="summary_large_image" />
@@ -57,9 +64,10 @@ function AnimeDetail(props) {
             property="twitter:url"
             content="https://anime-kj04hdzzu-shwetzksk.vercel.app"
           />
+          <meta name="twitter:site" content="@shwetzksk"></meta>
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={synopsis} />
-          <meta property="twitter:image" content={image_url} />
+          <meta property="twitter:image" content={large_img} />
         </Head>
         <main className="py-12 px-8 ">
           <div className="w-64 ml-5 float-right rounded-lg">
