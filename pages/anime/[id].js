@@ -165,12 +165,12 @@ export async function getStaticPaths() {
   const { data } = await axios.get(anime_list(1)).then((res) => res);
 
   const paths = data.data
-    .filter((anime, i) => i <= 3)
+    .filter((anime, i) => i <= 2)
     .map((anime) => ({
       params: { id: anime.mal_id.toString() },
     }));
 
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
