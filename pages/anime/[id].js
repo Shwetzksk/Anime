@@ -41,14 +41,22 @@ function AnimeDetail(props) {
           <meta name="title" content={title} />
           <meta name="description" content={synopsis} />
 
+          {/*----- facebook --------*/}
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="url--link" />
+          <meta
+            property="og:url"
+            content="https://anime-kj04hdzzu-shwetzksk.vercel.app"
+          />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={synopsis} />
           <meta property="og:image" content={image_url} />
 
+          {/*-------- twitter -----------*/}
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://metatags.io/" />
+          <meta
+            property="twitter:url"
+            content="https://anime-kj04hdzzu-shwetzksk.vercel.app"
+          />
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={synopsis} />
           <meta property="twitter:image" content={image_url} />
